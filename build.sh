@@ -2,12 +2,8 @@
 
 export HOST_UID=$(id -u)
 
-# add project repository
-
-docker-compose build
 docker-compose up -d
 
-cat certificates/.env > app/.env
 sh run.sh php-cli composer install --no-interaction
 
 sleep 30s
