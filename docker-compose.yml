@@ -60,6 +60,7 @@ services:
       - ./supervisor/config/deposit-queue.conf:/etc/supervisor/conf.d/deposit-queue.conf:ro
       - ./supervisor/config/transfer-queue.conf:/etc/supervisor/conf.d/transfer-queue.conf:ro
       - ./supervisor/config/block-queue.conf:/etc/supervisor/conf.d/block-queue.conf:ro
+      - ./supervisor/config/unblock-queue.conf:/etc/supervisor/conf.d/unblock-queue.conf:ro
       - ./supervisor/config/supervisor.conf:/etc/supervisor/supervisor.conf:ro
       - ./app:/app:rw
     networks:
