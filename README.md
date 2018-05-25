@@ -12,7 +12,6 @@
 * cd billing-task-docker
 * git clone https://github.com/Arty123/billing-task app
 * sh build.sh
-* sh run.sh php-cli bin/console app:test-consumer
 
 ## Stack ##
 * Docker
@@ -22,6 +21,12 @@
 * Mysql 5.7
 * PHP7.1
 
-Run test script:  
+## Application testing:
+#### Run test script
 ```bash 
 sh run.sh php-cli bin/console app:test-consumer 
+```
+#### See database
+```bash
+docker exec -it mysql-db bash
+
